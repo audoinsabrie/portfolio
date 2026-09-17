@@ -1,1 +1,405 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Troisième — Audoin Sabrié</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f7f7f5;
+            color: #171717;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: auto;
+            padding: 0 30px;
+        }
+
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            padding: 100px 0 80px;
+        }
+
+        .hero p.intro {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(48px, 8vw, 78px);
+            line-height: 1;
+            letter-spacing: -3px;
+            margin-bottom: 30px;
+        }
+
+        .hero-description {
+            max-width: 680px;
+            font-size: 20px;
+            color: #555;
+        }
+
+        section {
+            padding: 80px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .section-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .level-title {
+            font-size: 32px;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+        }
+
+        .level-description {
+            max-width: 700px;
+            color: #666;
+            font-size: 17px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            border: 1px solid #d8d8d8;
+            border-radius: 8px;
+            padding: 28px;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #999;
+        }
+
+        .card-number {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 25px;
+        }
+
+        .card h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card-link {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        .extra {
+            background: #171717;
+            color: white;
+            border-top: none;
+        }
+
+        .extra .section-title {
+            color: #aaa;
+        }
+
+        .extra-content {
+            max-width: 750px;
+        }
+
+        .extra h2 {
+            font-size: 40px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .extra p {
+            color: #bbb;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .extra .card {
+            background: #222;
+            border-color: #444;
+            color: white;
+        }
+
+        .extra .card:hover {
+            border-color: #777;
+        }
+
+        .extra .card p {
+            color: #bbb;
+        }
+
+        .extra .card-number {
+            color: #999;
+        }
+
+        .extra .card-link {
+            color: white;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            border: 1px solid #171717;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #171717;
+            color: white;
+        }
+
+        .extra .button {
+            border-color: white;
+        }
+
+        .extra .button:hover {
+            background: white;
+            color: #171717;
+        }
+
+        footer {
+            padding: 30px 0;
+            border-top: 1px solid #ddd;
+            color: #888;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .extra h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+
+            <a href="./index.html" class="logo">
+                AUDOIN SABRIÉ
+            </a>
+
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./index.html#parcours">Parcours</a></li>
+                <li><a href="./index.html#projets">Projets</a></li>
+                <li><a href="./enseignement.html">Enseignement</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- INTRODUCTION -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <p class="intro">
+                Enseignement · Collège · Troisième
+            </p>
+
+            <h1>
+                Mathématiques<br>
+                Troisième.
+            </h1>
+
+            <p class="hero-description">
+                Retrouvez ici mes supports de cours de mathématiques
+                pour la classe de Troisième, organisés par chapitre.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROGRAMME -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+                01 — Programme de Troisième
+            </div>
+
+            <h2 class="level-title">
+                Cours & chapitres
+            </h2>
+
+            <p class="level-description">
+                Des supports de cours consacrés aux principaux thèmes
+                du programme de mathématiques de Troisième, avec des
+                définitions, propriétés, démonstrations et exercices
+                d'application.
+            </p>
+
+            <div class="cards">
+
+                <!-- 01 -->
+
+                <div class="card">
+
+                    <div class="card-number">01</div>
+
+                    <h3>Puissances</h3>
+
+                    <p>
+                        Puissances d'un nombre, règles de calcul,
+                        puissances de 10, notation scientifique
+                        et ordre de grandeur.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/TROIS_puissance.pdf">
+                        Consulter le cours →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HORS PROGRAMME -->
+
+    <section class="extra">
+
+        <div class="container">
+
+            <div class="section-title">
+                02 — Hors programme
+            </div>
+
+            <div class="extra-content">
+
+                <h2>
+                    Aller plus loin.
+                </h2>
+
+                <p>
+                    Cette section pourra accueillir des ressources
+                    complémentaires destinées aux élèves souhaitant
+                    approfondir certaines notions ou prendre de l'avance
+                    sur le programme du lycée.
+                </p>
+
+
+                <br>
+
+                <a class="button" href="./enseignement.html">
+                    ← Retour à l'enseignement
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+        © 2026 Audoin Sabrié · Portfolio personnel
+    </div>
+
+</footer>
+
+</body>
+</html>
+```
 
