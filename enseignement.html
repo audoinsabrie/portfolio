@@ -141,30 +141,9 @@
             font-weight: 600;
         }
 
-        .resources {
-            background: #171717;
-            color: white;
-            border-top: none;
-        }
-
-        .resources .section-title {
-            color: #aaa;
-        }
-
-        .resources-content {
-            max-width: 700px;
-        }
-
-        .resources h2 {
-            font-size: 40px;
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
-
-        .resources p {
-            color: #bbb;
-            font-size: 18px;
-            margin-bottom: 30px;
+        .button-section {
+            padding: 50px 0 80px;
+            border-top: 1px solid #ddd;
         }
 
         .button {
@@ -179,15 +158,6 @@
         .button:hover {
             background: #171717;
             color: white;
-        }
-
-        .resources .button {
-            border-color: white;
-        }
-
-        .resources .button:hover {
-            background: white;
-            color: #171717;
         }
 
         footer {
@@ -209,10 +179,6 @@
 
             .cards {
                 grid-template-columns: repeat(2, 1fr);
-            }
-
-            .resources h2 {
-                font-size: 32px;
             }
         }
 
@@ -520,32 +486,94 @@
     </section>
 
 
-    <!-- RESSOURCES -->
+    <!-- DOCUMENTS AUTONOMES -->
 
-    <section class="resources">
+    <section>
 
         <div class="container">
 
             <div class="section-title">
-                04 — Ressources
+                04 — Documents autonomes
             </div>
 
-            <div class="resources-content">
+            <h2 class="level-title">
+                Mémos & fiches de référence
+            </h2>
 
-                <h2>
-                    Des supports construits pour progresser.
-                </h2>
+            <div class="cards">
 
-                <p>
-                    Fiches de cours, exercices, corrections et supports
-                    pédagogiques seront progressivement ajoutés à cette page.
-                </p>
+                <div class="card">
 
-                <a class="button" href="./index.html">
-                    ← Retour au portfolio
-                </a>
+                    <div class="card-number">01</div>
+
+                    <h3>Ensembles et intervalles</h3>
+
+                    <p>
+                        Notations des ensembles, appartenance, inclusion,
+                        intervalles et représentation sur la droite réelle.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/ensembles_intervalles.pdf">
+                        Consulter le mémo →
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">02</div>
+
+                    <h3>Opérations ensemblistes</h3>
+
+                    <p>
+                        Union, intersection, complémentaire, différence
+                        et représentation des opérations sur les ensembles.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/operations_ensemblistes.pdf">
+                        Consulter le mémo →
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">03</div>
+
+                    <h3>Symboles mathématiques</h3>
+
+                    <p>
+                        Principaux symboles et notations utilisés en
+                        mathématiques : lecture, signification et usage.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/symboles_mathematiques.pdf">
+                        Consulter le mémo →
+                    </a>
+
+                </div>
 
             </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RETOUR AU PORTFOLIO -->
+
+    <section class="button-section">
+
+        <div class="container">
+
+            <a class="button" href="./index.html">
+                ← Retour au portfolio
+            </a>
 
         </div>
 
