@@ -143,4 +143,335 @@
         }
 
         .card-link {
-            font
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        .button-section {
+            padding: 50px 0 80px;
+            border-top: 1px solid #ddd;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            border: 1px solid #171717;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #171717;
+            color: white;
+        }
+
+        footer {
+            padding: 30px 0;
+            border-top: 1px solid #ddd;
+            color: #888;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+
+            <a href="./index.html" class="logo">
+                AUDOIN SABRIÉ
+            </a>
+
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./index.html#parcours">Parcours</a></li>
+                <li><a href="./index.html#projets">Projets</a></li>
+                <li><a href="./enseignement.html">Enseignement</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- INTRODUCTION -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <p class="intro">
+                Enseignement · Documents autonomes
+            </p>
+
+            <h1>
+                Mémos<br>
+                & fiches.
+            </h1>
+
+            <p class="hero-description">
+                Retrouvez ici des cours, mémos, aides et fiches de référence
+                consacrés à différentes notions et méthodes mathématiques.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOCUMENTS -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+                01 — Documents disponibles
+            </div>
+
+            <h2 class="level-title">
+                Cours & fiches de référence
+            </h2>
+
+            <p class="level-description">
+                Ces documents peuvent être consultés indépendamment des
+                cours par niveau. Ils ont pour objectif de rappeler une
+                définition, une méthode, une notation ou une propriété.
+            </p>
+
+            <div class="cards">
+
+                <!-- 01 -->
+
+                <div class="card">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Opérations ensemblistes
+                    </h3>
+
+                    <p>
+                        Appartenance, inclusion, union, intersection,
+                        différence, complémentaire et lois de De Morgan.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/operations_ensemblistes.pdf">
+                        Consulter le document →
+                    </a>
+
+                </div>
+
+
+                <!-- 02 -->
+
+                <div class="card">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Ensembles et intervalles
+                    </h3>
+
+                    <p>
+                        Notations des ensembles, ensembles de nombres,
+                        intervalles et représentation sur la droite réelle.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/ensembles_intervalles.pdf">
+                        Consulter le document →
+                    </a>
+
+                </div>
+
+
+                <!-- 03 -->
+
+                <div class="card">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Symboles mathématiques
+                    </h3>
+
+                    <p>
+                        Principaux symboles utilisés en mathématiques,
+                        leur signification, leur lecture et leur usage.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/symboles_mathematiques.pdf">
+                        Consulter le document →
+                    </a>
+
+                </div>
+
+
+                <!-- 04 -->
+
+                <div class="card">
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Logique mathématique
+                    </h3>
+
+                    <p>
+                        Propositions, connecteurs logiques, quantificateurs
+                        et principaux raisonnements mathématiques.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/logique_mathematique.pdf">
+                        Consulter le document →
+                    </a>
+
+                </div>
+
+
+                <!-- 05 -->
+
+                <div class="card">
+
+                    <div class="card-number">
+                        05
+                    </div>
+
+                    <h3>
+                        Méthodes de démonstration
+                    </h3>
+
+                    <p>
+                        Raisonnement direct, contraposée, raisonnement
+                        par l'absurde, récurrence et contre-exemple.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/methodes_demonstration.pdf">
+                        Consulter le document →
+                    </a>
+
+                </div>
+
+
+                <!-- 06 -->
+
+                <div class="card">
+
+                    <div class="card-number">
+                        06
+                    </div>
+
+                    <h3>
+                        Sommes et produits
+                    </h3>
+
+                    <p>
+                        Notations, propriétés et méthodes de calcul
+                        relatives aux sommes et aux produits.
+                    </p>
+
+                    <a class="card-link"
+                       href="./cours/sommes_produits.pdf">
+                        Consulter le document →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOCUMENTS À VENIR -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+                02 — Documents à venir
+            </div>
+
+            <h2 class="level-title">
+                D'autres fiches progressivement disponibles.
+            </h2>
+
+            <p class="level-description">
+                De nouveaux supports pourront être ajoutés au fil de la
+                construction de cette bibliothèque : rappels de calcul,
+                méthodes de résolution, propriétés fondamentales et aides
+                à la rédaction mathématique.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RETOUR -->
+
+    <section class="button-section">
+
+        <div class="container">
+
+            <a class="button" href="./enseignement.html">
+                ← Retour à l'enseignement
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+        © 2026 Audoin Sabrié · Portfolio personnel
+    </div>
+
+</footer>
+
+</body>
+</html>
