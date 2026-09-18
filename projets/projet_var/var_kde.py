@@ -101,7 +101,6 @@ backtest_kde_99["exception"] = (
 
 print()
 print("KDE VaR 95%")
-print("--------------------")
 print(
     "Exceptions :",
     backtest_kde_95["exception"].sum()
@@ -122,7 +121,6 @@ print(
 
 print()
 print("KDE VaR 99%")
-print("--------------------")
 print(
     "Exceptions :",
     backtest_kde_99["exception"].sum()
@@ -367,10 +365,7 @@ conditional_kde_99 = conditional_coverage_test(
 )
 
 
-print()
-print("========================================")
 print("KDE - BACKTESTING 95%")
-print("========================================")
 
 print()
 print("Kupiec - Unconditional Coverage")
@@ -392,10 +387,7 @@ print("LR :", conditional_kde_95["lr_cc"])
 print("p-value :", conditional_kde_95["p_value"])
 
 
-print()
-print("========================================")
 print("KDE - BACKTESTING 99%")
-print("========================================")
 
 print()
 print("Kupiec - Unconditional Coverage")
