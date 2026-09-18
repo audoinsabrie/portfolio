@@ -63,7 +63,7 @@ plt.title("Distribution des pertes du portefeuille")
 plt.show()
 
 
-print("\n--- Statistiques des pertes ---")
+print("\nStatistiques des pertes")
 
 print("Moyenne :", losses.mean())
 print("Écart-type :", losses.std())
@@ -306,9 +306,7 @@ result_99 = backtesting(
 )
 
 
-print("\n========================================")
 print("HISTORICAL - BACKTESTING 95%")
-print("========================================")
 
 print(
     "\nExceptions :",
@@ -387,9 +385,7 @@ print(
 )
 
 
-print("\n========================================")
 print("HISTORICAL - BACKTESTING 99%")
-print("========================================")
 
 print(
     "\nExceptions :",
